@@ -25,7 +25,8 @@ jobs:
       - image: cimg/node:13.8.0
     steps:
       - run: 
-         command: |
+        name: test1
+        command: |
           echo $CODE 
           echo hello from tamer
   print_world:
