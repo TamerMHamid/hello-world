@@ -19,10 +19,12 @@ jobs:
   #         name: "Say hello"
   #         command: "echo Hello, World!"
   print_hello:
+    environment:
+      CODE: 123
     docker:
       - image: cimg/node:13.8.0
     steps:
-      - run: echo hello 
+      - run: echo $CODE 
   print_world:
     docker:
       - image: circleci/node:13.8.0
