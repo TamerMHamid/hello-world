@@ -20,7 +20,7 @@ jobs:
   #         command: "echo Hello, World!"
   print_hello:
     environment:
-      CODE: 123
+      CODE: tamer elorsi
     docker:
       - image: cimg/node:13.8.0
     steps:
