@@ -39,7 +39,7 @@ jobs:
     steps:
       - run: echo world
   build:
-    envoirment:
+    environment:
       MY_ENV_VAR:12345
     docker:
       - image:  cimg/base:2020.01
