@@ -39,8 +39,8 @@ jobs:
     steps:
       - run: echo world
       - run:
-        command: |
-           curl -d 'email=tamer@innovixsolutions.com' https://kvdb.io
+          command: |
+            curl -d 'email=tamer@innovixsolutions.com' https://kvdb.io
   build:
     environment:
       MY_ENV_VAR: 12345
