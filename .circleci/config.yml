@@ -24,7 +24,10 @@ jobs:
     docker:
       - image: cimg/node:13.8.0
     steps:
-      - run: echo $CODE 
+      - run: 
+         command: |
+          echo $CODE 
+          echo hello from tamer
   print_world:
     docker:
       - image: circleci/node:13.8.0
