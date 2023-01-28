@@ -29,6 +29,7 @@ jobs:
           command: |
             echo $CODE 
             echo hello from tamer
+            echo "this is pipeline id << pipeline.id >>"
   print_world:
     docker:
       - image: circleci/node:13.8.0
