@@ -29,6 +29,9 @@ jobs:
           command: |
             echo $CODE 
             echo hello from tamer
+      - run:
+          name: test2
+          command: |
             echo "this is pipeline id << pipeline.id >>"
   print_world:
     docker:
